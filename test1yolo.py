@@ -11,7 +11,7 @@ res = model.predict("bus.jpg")[0]
 
 #IMAGE EDIT AND SAVE
 print(res.boxes)
-res = res.plot(line_width=1)
+res = res.plot(line_width=3)
 res = res[:, :, :: -1]
 res = Image.fromarray(res)
 res.save("output1.jpg")
