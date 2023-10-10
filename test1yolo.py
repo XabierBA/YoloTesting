@@ -7,7 +7,7 @@ model = YOLO("yolov8n.yaml")
 model = YOLO("yolov8n.pt")
 
 #PREDICTIONS
-res = model.predict("test1.jpeg")[0]
+res = model.predict("bus.jpg")[0]
 
 #IMAGE EDIT AND SAVE
 print(res.boxes)
