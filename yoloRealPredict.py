@@ -7,7 +7,7 @@ model = YOLO("yolov8n.yaml")
 model = YOLO("yolov8n.pt")
 
 #PREDICTIONS
-res = model.predict(source="0",show=True)
+res = model.track(source="0",show=True)
 
 
 # View results
